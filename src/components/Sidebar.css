@@ -1,0 +1,108 @@
+.sidebar{
+    width:300px;
+    min-width: 300px;
+    background: var(--primary-color);
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    color: #fff;
+}
+.sidebar-content{
+    position: fixed;
+    width: inherit;
+}
+.sidebar .user{
+    border-bottom:1px solid rgba(255,255,255,.2);
+    padding:30px;
+    font-weight: 600;
+    text-align: center;
+}
+.sidebar .links{
+    margin-top:80px;
+    margin-left: 15px;
+}
+.sidebar .links li{
+    margin-top:10px;
+}
+.sidebar .links a{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color:#fff;
+    box-sizing: border-box;
+    width: 100%;
+}
+.sidebar .links img{
+    filter: invert(100%);
+    margin-right: 10px;
+}
+.sidebar .links a.active{
+    color:#555;
+    background: var(--bg-color);
+    border-radius: 10px 0 0 10px;
+}
+.sidebar .links .active img{
+    filter: invert(40%);
+}
+.dark-mode{
+    padding:40px 25px; 
+    border-top:1px solid rgba(255,255,255,.2);
+    margin-top:50px;
+}
+.toggle{
+    width:64px;
+    height: 28px;
+    background-color: #555;
+    border-radius: 32px;
+    margin-top:10px;
+    padding: 4px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.toggle > span{
+    display: inline-block;
+    height:28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 400ms ease-in-out;
+}
+.toggle.active span{
+    transform: translateX(36px);
+}
+.toggle.active{
+    background-color: green;
+}
+.toggle:after{
+    content:'OFF';
+    font-size:12px;
+    position:absolute;
+    right:8px;
+}
+.toggle.active:after{
+    content:'ON';
+    left:8px;
+}
+
+@media (max-width:767px){
+    .sidebar{
+        position: fixed;
+        left: -100%;
+        z-index: 10;
+        transition: all 500ms ease;
+    }
+    .sidebar.open {
+        left: 0;
+    }
+}
+
+/*DARK MODE STYLES*/
+.sidebar .links.darkmode a, 
+.sidebar .links.darkmode a.active{
+    color:#fff;
+}
+.sidebar .links.darkmode .active img{
+    filter: invert(100%);
+}

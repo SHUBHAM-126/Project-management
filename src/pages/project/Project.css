@@ -1,0 +1,122 @@
+.project-details{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+    grid-gap:50px;
+    margin-top:40px;
+    margin-bottom: 100px;
+}
+/*Margin top for error and loading*/
+.p-top{
+    margin-top:40px;
+}
+.del-btn.btn{
+    margin-top:30px;
+}
+
+.project-summary{
+    background-color:#fff;
+    padding:30px;
+    border-radius: 3px;
+}
+
+.project-summary .due-date{
+    margin:10px 0;
+    color: var(--title-color);
+    font-size:.9em;
+}
+
+.project-summary .details{
+    margin:25px 0;
+    color: var(--text-color);
+    line-height: 1.6em;
+    font-size: .9em;
+}
+
+.project-summary h4{
+    color: var(--text-color);
+    font-size: .9em;
+}
+
+.project-summary .assigned-users{
+    display: flex;
+    margin-top:15px;
+}
+
+.project-summary .assigned-users .avatar{
+    margin-right:15px;
+}
+
+.project-author{
+    margin-top:5px;
+    font-size:.75em;
+}
+
+/*PROJECT COMMENTS*/
+.project-comments label{
+    margin-bottom:10px;
+}
+.project-comments textarea{
+    min-height: 40px;
+}
+
+.project-comments h4{
+    color: var(--heading-color);
+}
+
+.project-comments li{
+    padding:10px;
+    border-radius: 3px;
+    border:1px solid #f2f2f2;
+    margin-top:20px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.comment-author{
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+}
+.comment-author .avatar{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+
+.comment-date{
+    color: var(--text-color);
+    font-size: .7em;
+    margin:4px 0 10px; 
+}
+
+.comment-content{
+    color: var(--text-color);
+    font-size: .9em;
+}
+
+@media (max-width:767px){
+    .project-details{
+        grid-template-columns:1fr;
+    }
+    .project-summary{
+        padding:15px 10px;
+    }
+}
+
+/*DARK MODE STYLES*/
+.project-summary.darkmode{
+    background-color:var(--secondary-color);
+}
+.project-summary.darkmode .project-author,
+.project-summary.darkmode .due-date,
+.project-comments.darkmode .comment-date{
+    color:#b8b8b8;
+}
+.project-comments.darkmode li{
+    background-color: var(--secondary-color);
+    border:1px solid var(--secondary-color);
+}
+.project-comments.darkmode .comment-author p{
+    color:#fff;
+}

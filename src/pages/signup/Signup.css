@@ -1,0 +1,14 @@
+.signup-form{
+    max-width:480px;
+    margin:40px auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+@media (max-width:767px){
+    .signup-form{
+        padding:20px 10px;
+    }
+}
