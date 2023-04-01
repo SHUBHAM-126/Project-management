@@ -16,7 +16,7 @@ Allows team members to create, assign and manage projects and add their comments
 ### Home screen:
 ![image](https://user-images.githubusercontent.com/73948769/229283543-e217cbbd-a1b6-448f-9123-c365ccc23101.png)
 
-### New project screen:
+### Create new project screen:
 ![image](https://user-images.githubusercontent.com/73948769/229283673-5d5fc43a-f46f-4249-a38c-30dad043a145.png)
 
 ### Project screen:
@@ -26,7 +26,7 @@ Allows team members to create, assign and manage projects and add their comments
 ### Home page screen:
 ![image](https://user-images.githubusercontent.com/73948769/229284242-b6dbb038-72d6-460e-8cb5-b4ac77ec9e31.png)
 
-### New project screen:
+### Create new project screen:
 ![image](https://user-images.githubusercontent.com/73948769/229284343-4c43bb58-0224-4408-a4f4-81ad975ec394.png)
 
 ### Project screen:
